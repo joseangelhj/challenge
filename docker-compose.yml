@@ -6,12 +6,12 @@ services:
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/ecommerce
       - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=3$t3F4n14
+      - SPRING_DATASOURCE_PASSWORD=password
   db:
     image: postgres:13
     environment:
       - POSTGRES_DB=ecommerce
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=3$t3F4n14
+      - POSTGRES_PASSWORD=password
     ports:
       - "5432:5432"
